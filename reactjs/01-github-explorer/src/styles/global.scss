@@ -6,4 +6,9 @@
 body{
 	font: 16px "Helvetica Neue", Arial, sans-serif;
 	color: #121214;
+	ul{
+		display: flex;
+		gap: 15px;
+		flex-direction: column;
+	}
 }

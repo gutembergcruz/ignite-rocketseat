@@ -1,4 +1,12 @@
+import { RepositoryItem } from './RepositoryItem';
 const repositoryName = 'unform2';
+
+const biribiri = {
+    name: 'Unform',
+    description: 'Descrição',
+    link: 'https://www.google.com.br'
+}
+
 
 export function RepositoryList() {
     return(
@@ -6,31 +14,8 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <li>
-                    <strong>{repositoryName}</strong>
-                    <p>Forms in React</p>
-                    <a href="#">Acessar Repositório</a>
-                </li>
-                <li>
-                    <strong>Unform</strong>
-                    <p>Forms in React</p>
-                    <a href="#">Acessar Repositório</a>
-                </li>
-                <li>
-                    <strong>Unform</strong>
-                    <p>Forms in React</p>
-                    <a href="#">Acessar Repositório</a>
-                </li>
-                <li>
-                    <strong>Unform</strong>
-                    <p>Forms in React</p>
-                    <a href="#">Acessar Repositório</a>
-                </li>
-                <li>
-                    <strong>Unform</strong>
-                    <p>Forms in React</p>
-                    <a href="#">Acessar Repositório</a>
-                </li>
+                <RepositoryItem repository={biribiri}/>
+                <RepositoryItem/>
             </ul>
         </section>
     )
