@@ -1,4 +1,7 @@
 import { RepositoryItem } from './RepositoryItem';
+
+import '../styles/repositories.scss';
+
 const repositoryName = 'unform2';
 
 const biribiri = {
