@@ -3,6 +3,11 @@ import { Counter } from './components/Counter';
 
 import './styles/global.scss'
 
-export function App(){
-    return <Counter />
+export function App() {
+    return (
+        <>
+            <RepositoryList />
+            <Counter />
+        </>
+    )
 }
