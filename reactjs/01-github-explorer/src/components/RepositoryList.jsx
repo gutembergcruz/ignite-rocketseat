@@ -5,12 +5,6 @@ import '../styles/repositories.scss';
 
 //https://api.github.com/users/Gutemberg234/repos
 
-const biribiri = {
-    name: 'Unform',
-    description: 'Descrição',
-    link: 'https://www.google.com.br'
-}
-
 export function RepositoryList() {
     const [repos, setRepos] = useState([]);
 
@@ -25,8 +19,9 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <RepositoryItem repository={biribiri}/>
-                <RepositoryItem/>
+                {repos.map(repo => {
+                    return <RepositoryItem key={repo.name} repository={repo}/>
+                })}
             </ul>
         </section>
     )
