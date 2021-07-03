@@ -5,8 +5,14 @@ import '../styles/repositories.scss';
 
 //https://api.github.com/users/Gutemberg234/repos
 
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string;
+}
+
 export function RepositoryList() {
-    const [repos, setRepos] = useState([]);
+    const [repos, setRepos] = useState<Repository[]>([]);
 
     useEffect(() => {
         fetch('https://api.github.com/users/Gutemberg234/repos')
