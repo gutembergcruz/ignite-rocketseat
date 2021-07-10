@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 
         --background: #f0f2f5;
         --shape: #ffffff;
+
+        //#0a3876, #ec0b43, #202833, #252e3b
     }
     
     *{
