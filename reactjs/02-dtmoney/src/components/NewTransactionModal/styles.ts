@@ -13,7 +13,7 @@ export const Container = styled.form`
         height: 4rem;
         border-radius: 0.25rem;
 
-        border: 1px solid #d7d7d7;;
+        border: 1px solid #d7d7d7;
         background: #e7e9ee;
 
         font-weight: 400;
