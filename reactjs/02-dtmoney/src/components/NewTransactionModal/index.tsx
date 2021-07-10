@@ -5,7 +5,6 @@ import { TransactionsContext } from '../../TransactionsContext';
 import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
-import { api } from '../../services/api';
 
 import { Container, RadioBox, TransactionTypeContainer, } from './styles';
 
