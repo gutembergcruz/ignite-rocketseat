@@ -1,13 +1,12 @@
-import { useContext } from 'react'
 import incomeImg from '../../assets/income.svg'
 import outcomeImg from '../../assets/outcome.svg'
 import totalImg from '../../assets/total.svg'
-import { TransactionsContext } from '../../TransactionsContext'
+import { useTransactions } from '../../hooks/useTransactions'
 
 import { Container } from "./styles"
 
 export function Sumary() {
-    const { transactions } = useContext(TransactionsContext);
+    const { transactions } = useTransactions()
 
     const sumary = transactions.reduce((acc, transactions) => {
 
